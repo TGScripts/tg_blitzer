@@ -11,13 +11,13 @@ local label =
                     Made by Tiger (Lets_Tiger#4159)
 ]]
 
-local rio = false
-local resourceName = "ERROR"
-local responseText = "ERROR"
-local curVersion = 7.0
-local updatePath = "ERROR"
-local svs = false
-local utd = false
+--local rio = false
+--local resourceName = "ERROR"
+--local responseText = "ERROR"
+--local curVersion = 7.0
+--local updatePath = "ERROR"
+--local svs = false
+--local utd = false
 
 function GetCurrentVersion()
 	return GetResourceMetadata( GetCurrentResourceName(), "version" )
