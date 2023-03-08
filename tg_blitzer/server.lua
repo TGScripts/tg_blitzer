@@ -24,7 +24,7 @@ function GetCurrentVersion()
 end
 
 Citizen.CreateThread( function()
-    updatePath = "/LetsTiger/FiveM-Scripts/tg_blitzer"
+    updatePath = "/LetsTiger/tg_blitzer/blob/main/tg_blitzer"
     resourceName = " Blitzer Script ("..GetCurrentResourceName()..")"
     
     function checkVersion(err,responseText, headers)
@@ -42,7 +42,7 @@ Citizen.CreateThread( function()
         end
     end
     
-    PerformHttpRequest("https://github.com/"..updatePath.."/master/version", checkVersion, "GET")
+    PerformHttpRequest("https://github.com"..updatePath.."/version", checkVersion, "GET")
 end)
 
 function Resourcestart()
