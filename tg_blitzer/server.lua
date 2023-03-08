@@ -24,7 +24,7 @@ function GetCurrentVersion()
 end
 
 Citizen.CreateThread( function()
-    updatePath = "/LetsTiger/tg_blitzer/blob/main/tg_blitzer"
+    updatePath = "/LetsTiger/tg_blitzer/tg_blitzer"
     resourceName = " Blitzer Script ("..GetCurrentResourceName()..")"
     
     function checkVersion(err,responseText, headers)
