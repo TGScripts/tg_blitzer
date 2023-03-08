@@ -5,10 +5,10 @@ author 'Tiger (Lets_Tiger#4159)'
 description 'Blitzer Script'
 version '1.0'
 
-server_script "server.lua"
+server_script "server/version_check.lua"
 
 client_scripts {
-	'client.lua',
+	'client/main.lua',
 	'config.lua'
 }
 

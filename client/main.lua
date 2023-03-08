@@ -1,22 +1,3 @@
-function GetCurrentVersion()
-	return GetResourceMetadata( GetCurrentResourceName(), "version" )
-end
-
-local curVer = GetCurrentVersion()
-
-print("\n")
-print(".______    __       __  .___________.________   _______ .______      ")
-print("|   _  |  |  |     |  | |           |       /  |   ____||   _  |     ")
-print("|  |_)  | |  |     |  | `---|  |----`---/  /   |  |__   |  |_)  |    ")
-print("|   _  <  |  |     |  |     |  |       /  /    |   __|  |      /     ")
-print("|  |_)  | |  `----.|  |     |  |      /  /----.|  |____ |  ||  |----.")
-print("|______/  |_______||__|     |__|     /________||_______|| _| `._____|")
-print("\n")
-print("                Made by Tiger (Lets_Tiger#4159)                      ")
-print("                         Version "..curVer.."                                 ")
-print("                         Up to date!                                 ")
-print("\n")
-
 local isinzone = false
 local sentbill = false
 local ESX = nil
@@ -70,7 +51,7 @@ CreateThread(function()
 									if sentbill == false then
 										above = ESX.Math.Round((speed-(v.Speedlimit + 5)))
 										amount = 25*above
-										TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(PlayerId()), 'society_police', 'Blitzerrechnung - ~r~'..above..' km/h~s~ drüber', amount)
+										TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(PlayerId()), Config.Reciever, 'Blitzerrechnung - ~r~'..above..' km/h~s~ drüber', amount)
 										sentbill = true
 									end
 								end
@@ -126,7 +107,7 @@ CreateThread(function()
 										if sentbill == false then
 											above = ESX.Math.Round((speed-(v.Speedlimit + 5)))
 											amount = 25*above
-											TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(PlayerId()), 'society_police', 'Blitzerrechnung - ~r~'..above..' km/h~s~ drüber', amount)
+											TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(PlayerId()), Config.Reciever, 'Blitzerrechnung - ~r~'..above..' km/h~s~ drüber', amount)
 											sentbill = true
 										end
 									end
@@ -164,7 +145,7 @@ CreateThread(function()
 				SetBlipAsShortRange(blip, true)
 
 				BeginTextCommandSetBlipName('STRING')
-				AddTextComponentSubstringPlayerName("Blitzer")
+				AddTextComponentSubstringPlayerName(Config.Blipname)
 				EndTextCommandSetBlipName(blip)
 			end
 		end

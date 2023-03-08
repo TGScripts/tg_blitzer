@@ -11,25 +11,18 @@ local label =
                     Made by Tiger (Lets_Tiger#4159)
 ]]
 
---local rio = false
---local resourceName = "ERROR"
---local responseText = "ERROR"
---local curVersion = 7.0
---local updatePath = "ERROR"
---local svs = false
---local utd = false
-
 function GetCurrentVersion()
 	return GetResourceMetadata( GetCurrentResourceName(), "version" )
 end
 
 Citizen.CreateThread( function()
-    updatePath = "/LetsTiger/tg_blitzer/tg_blitzer"
-    resourceName = " Blitzer Script ("..GetCurrentResourceName()..")"
+    updatePath = "/LetsTiger/tg_blitzer"
+    resourceName = "Blitzer Script ("..GetCurrentResourceName()..")"
     
     function checkVersion(err,responseText, headers)
-        curVersion = LoadResourceFile(GetCurrentResourceName(), "version")
-    
+        curVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
+        newVersion = tonumber(responseText)
+
         if curVersion ~= responseText and tonumber(curVersion) < tonumber(responseText) then
             rio = true
             responseText = responseText
@@ -42,7 +35,7 @@ Citizen.CreateThread( function()
         end
     end
     
-    PerformHttpRequest("https://github.com"..updatePath.."/version", checkVersion, "GET")
+    PerformHttpRequest("https://raw.githubusercontent.com"..updatePath.."/master/version", checkVersion, "GET")
 end)
 
 function Resourcestart()
@@ -51,15 +44,22 @@ function Resourcestart()
     print( label )
 
     if rio then
-        print("\n"..resourceName.." is outdated, should be:\n"..responseText.."is:\n"..curVersion.."\nplease update it from https://github.com"..updatePath.."")
+        print(" ^0[^1ERROR^0] "..resourceName.." ist veraltet! Bitte updaten: https://github.com/LetsTiger/tg_blitzer/")
+        print(" ^0[^5INFO^0] Deine Version: [^1"..curVersion.."^0]")
+        print(" ^0[^5INFO^0] Neuste Version: [^3"..newVersion.."^0]")
     elseif svs then
-        print("You somehow skipped a few versions of "..resourceName.." or the git went offline, if it's still online i advise you to update ( or downgrade? )")
+        print(" ^0[^1ERROR^0] Irgendwie hast du ein paar Versionen vom "..resourceName.." übersprungen oder Github ist offline, wenn Github noch online ist bitte die neueste Version herunterladen.")
+        print(" ^0[^5INFO^0] Deine Version: [^1"..curVersion.."^0]")
+        print(" ^0[^5INFO^0] Neuste Version: [^3"..newVersion.."^0]")
     elseif utd then
-        print("\n"..resourceName.." is up to date, have fun!")
+        print(" ^0[^5INFO^0] Du hast die aktuellste Version vom "..resourceName..", viel Spaß!")
+        print(" ^0[^5INFO^0] Deine Version: [^2"..curVersion.."^0]")
+        print(" ^0[^5INFO^0] Neuste Version: [^2"..newVersion.."^0]")
     else
-        print("ERROR SOMETHING WENT WRONG!")
+        print(" ^0[^1ERROR^0] Es ist etwas schiefgelaufen bitte kontaktiere den Ersteller!")
     end
 
+    print("")
     print("\n")
 end
 

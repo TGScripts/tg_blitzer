@@ -1,14 +1,15 @@
 Config = {}
 
 Config.ActivateBill         =   true                            -- DEAKTIVIERT: Wenn 'false' wird das Geld direkt vom Bank Account abgebucht
-Config.DisableBlips         =   true                           -- Wenn 'true' werden gar keine Blips angezeigt
+Config.DisableBlips         =   true                            -- Wenn 'true' werden gar keine Blips angezeigt
 Config.WhitelistedJobs      =   {'police','fib','ambulance'}    -- Jobs die nicht geblitzt werden
 Config.ActivateFlash        =   false                           -- Beta Feature: Funktioniert noch nicht
 Config.DisableProps         =   false                           -- Wenn 'false' werden keine Props auf der Map platziert
 Config.Prop                 =   'prop_elecbox_03a'              -- Prop das an der Prop Stelle geplaced wird
+Config.Reciever             =   'society_police'                -- Auf welches Konto soll die Rechnung gehen?
+Config.Blipname             =   'Blitzer'                       -- Falls der Blip angezeigt werden soll, wie soll er heißen?
 
 Config.Blitzer = {
-    -- von hier
     Blitzer_Hauptplatz = {
 
         Prop = {
@@ -33,5 +34,4 @@ Config.Blitzer = {
         Speedlimit = 80 -- Tempolimit
 
     },
-    -- bis hier
 }
