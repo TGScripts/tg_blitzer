@@ -18,7 +18,7 @@ Eine Liste der einzelnen Features (für jeden Blitzer individuell):
 - Speedlimit
 
 ## Download
-[LINK]
+[[LINK]](https://github.com/LetsTiger/tg_blitzer/archive/refs/tags/Stable_Release.zip)
 
 ## Lizenz
 Dieses Script kann verändert und für deinen Server genutzt werden. Es ist NICHT erlaubt dieses Script erneut zu veröffentlichen oder ähnliches.
