@@ -5,6 +5,7 @@ Config.WhitelistedJobs      =   {'police','fib','ambulance'}    -- Jobs die nich
 Config.DisableProps         =   false                           -- Wenn 'false' werden keine Props auf der Map platziert
 Config.Prop                 =   'prop_elecbox_03a'              -- Prop das an der Prop Stelle geplaced wird
 Config.Reciever             =   'society_police'                -- Auf welches Konto soll die Rechnung gehen? - Leer lassen damit es ins nichts geht
+Config.BillMultiplyer       =   9                               -- Wie viel wird pro KM/H dazugerechnet? (km/h * Multiplyer)
 Config.Blipname             =   'Blitzer'                       -- Falls der Blip angezeigt werden soll, wie soll er heißen?
 
 Config.Blitzer = {

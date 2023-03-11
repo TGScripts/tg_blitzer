@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'Tiger (Lets_Tiger#4159)'
 description 'Blitzer Script'
-version '1.0'
+version '1.3'
 
 lua54 'yes'
 

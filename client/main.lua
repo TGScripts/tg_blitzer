@@ -50,7 +50,7 @@ CreateThread(function()
 								if not bypass then
 									if sentbill == false then
 										above = ESX.Math.Round((speed-(v.Speedlimit + 5)))
-										amount = 25*above
+										amount = Config.BillMultiplyer*above
 										TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(PlayerId()), Config.Reciever, 'Blitzerrechnung - ~r~'..above..' km/h~s~ drüber', amount)
 										sentbill = true
 									end
