@@ -1,7 +1,7 @@
 <p align="center">
     <hr>
         <p align="center">
-            <img src="https://cdn.discordapp.com/attachments/809523519632965664/1101964429643497573/TG_Logo.png" width="100" height="100"></img>
+            <img src="https://media.discordapp.net/attachments/1138437086781902959/1254122906485788822/TG_Logo.png?ex=66785879&is=667706f9&hm=57c6f31bc95c3481f905b5e464a0f11aee251572e5fe964a34887c247d00c5e3&=&format=webp&quality=lossless" width="100" height="100"></img>
         </p>
     <h1 align="center">
     TG SCRIPTS
@@ -16,31 +16,41 @@
     <hr>
 </p>
 
+![Discord](https://img.shields.io/discord/1101900001392721931?label=Discord%20Server) 
+![Release Date](https://img.shields.io/github/release-date/LetsTiger/tg_blitzer?label=Original%20Release%20Date) 
+![Release](https://img.shields.io/github/v/release/LetsTiger/tg_blitzer?label=Last%20Release%20(Download%20below)) 
+![Downloads (all assets, all releases)](https://img.shields.io/github/downloads/LetsTiger/tg_blitzer/total?label=Downloads)
+
+---
 # tg_blitzer
 **Kompatibilität:** FiveM Blitzer Script - ESX 1.9+
+| **_ESX Versions_** | Supported | Own Risk |
+|--------------------|:-----------:|:----------:|
+| before 1.9.0       |           |     ❌    |
+| 1.9.0 - 1.10.7     |     ✅     |          |
+| after 1.10.7       |           |     ❌    |
 
 <hr>
 
 ## Features
 **tg_blitzer** ist ein Blitzer Script für die ESX Version 1.9+. Es bietet viele Features welche in der config selbst umgestellt werden. Aktuell gibt es nur eine deutsche Version.
 Eine Liste der Main Features:
-- Blipmanagement
-- Jobs whitelisten
-- Blitz aktivieren/deaktivieren
-- Propmanagement
-- Rechnungsmanagement
+- **Blipmanagement** (Blips komplett an bzw. aus stellen)
+- **Jobs whitelisten** (Jobs die nicht geblitzt werden)
+- **Propmanagement** (Sollen Props platziert werden und wenn ja welches)
+- **Moneymanagement** (Von welchem Account soll das Geld abgezogen werden, Welcher Multiplyer soll verwendet werden, Wo soll das abgezogene Geld hingehen?)
 
 Eine Liste der einzelnen Features (für jeden Blitzer individuell):
-- Propmanagement
-- Lanemanagement
-- Second Landemanagement
-- Blipmanagement
-- Speedlimit
+- **Propmanagement**
+- **Lanemanagement**
+- **Second Lanemanagement**
+- **Blipmanagement**
+- **Speedlimit**
 
 <hr>
 
 ## Download
-[[LINK]](https://github.com/LetsTiger/tg_blitzer/archive/refs/tags/1.4.zip)
+[![Latest Release](https://img.shields.io/github/v/release/LetsTiger/tg_blitzer?label=latest)](https://github.com/LetsTiger/tg_blitzer/releases/latest)
 
 <hr>
 
