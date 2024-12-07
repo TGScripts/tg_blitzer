@@ -33,19 +33,21 @@
 
 > [!NOTE]
 > ## Features
-> **tg_blitzer** ist ein Blitzer Script für die ESX Version 1.9+. Es bietet viele Features welche in der config selbst umgestellt werden. Aktuell gibt es nur eine deutsche Version.
+> **tg_blitzer** ist ein Blitzer Script für die ESX Version 1.9+. Es bietet viele Features welche in der config selbst umgestellt werden.
 > Eine Liste der Main Features:
-> - **Blipmanagement** (Blips komplett an bzw. aus stellen)
-> - **Jobs whitelisten** (Jobs die nicht geblitzt werden)
-> - **Propmanagement** (Sollen Props platziert werden und wenn ja welches)
-> - **Moneymanagement** (Von welchem Account soll das Geld abgezogen werden, Welcher Multiplyer soll verwendet werden, Wo soll das abgezogene Geld hingehen?)
+> - Feature: **Sound & Effekt** (Wenn man geblitzt wird wird ein Sound und ein Effekt abgespielt)
+> - Config: **Einheit** (Ob mph oder kmh verwendet werden soll)
+> - Config: **Blipmanagement** (Blips komplett an bzw. aus stellen)
+> - Config: **Jobs whitelisten** (Jobs die nicht geblitzt werden)
+> - Config: **Propmanagement** (Sollen Props platziert werden und wenn ja welches)
+> - Config: **Moneymanagement** (Von welchem Account soll das Geld abgezogen werden, Welcher Multiplyer soll verwendet werden, Wo soll das abgezogene Geld hingehen?)
 > 
 > Eine Liste der einzelnen Features (für jeden Blitzer individuell):
-> - **Propmanagement**
-> - **Lanemanagement**
-> - **Second Lanemanagement**
-> - **Blipmanagement**
-> - **Speedlimit**
+> - Config: **Propmanagement**
+> - Config: **Lanemanagement**
+> - Config: **Second Lanemanagement**
+> - Config: **Blipmanagement**
+> - Config: **Speedlimit**
 
 <hr>
 
